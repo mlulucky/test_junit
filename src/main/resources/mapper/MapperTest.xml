@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="test01_db.MapperTest">
+    <!--  namespace = 인터페이스 패키지명.클래스명  -->
+    <select id="getPagingWithSeq" resultType="map">
+        SELECT *
+        FROM table
+        WHERE seq = #{seq}
+        ORDER BY seq LIMIT #{limit}
+        OFFSET #{offset}
+    </select>
+</mapper>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <mappers>
+        <mapper resource="mapper/MapperTest.xml"/>
+    </mappers>
+</configuration>
+
+<!--
+  mybatis-config.xml 파일
+  Mygatis 가 매퍼 파일을 찾고 실행할 수 있도록 경로지정
+-->
